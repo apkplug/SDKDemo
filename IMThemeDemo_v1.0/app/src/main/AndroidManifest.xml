@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.apkplug.imthemedemo"
+    android:versionCode="2"
+    android:versionName="1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:name="com.apkplug.imthemedemo.ProxyApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+         >
+         <meta-data  android:name="apkplug-auth" android:value="Y5oTKydJDW2+EC+0jREpAVQ/INR6S/DDxwACpl3xwOzxbHLi77TxWm7qe9t/pMp4twrfVYUpGZ1CHOvXQsL2WREMFjzMW6MDPN/7KT0Yjzl/n4b6EDVcshoUowuG64sUdfFryOwvEn+wUN/WcKp7nQlP46mmp4JfgOTh5niChrQ=" ></meta-data>
+         <meta-data  android:name="apkplug-theme-auth" android:value="CnFKkYracx5Uhjur2di2hl7pIcXjrHyCgmG4T0VR5LH4mdrty2QiPTPS1kchFSh1j6+TEBJ64ZYcKKtHy7HWh8oPWziMvaTeMIrmR0M91M4fIZmqx3qdqZHoZth9DbTIaxokVci9Ll87zJ4aQ916I+SVeOVtCOD0C6S1+QfdCF8=" ></meta-data>
+         <meta-data  android:name="apkplug-appid" android:value="0a9087b7bd921439" ></meta-data>
+        <activity
+            android:name="com.apkplug.imthemedemo.activity.MainActivity"
+            android:label="@string/app_name" 
+            android:theme="@style/Anim_style2" 
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.apkplug.app.apkplugActivity"  
+            android:configChanges="orientation|keyboardHidden"
+            />
+         <activity
+            android:name="com.apkplug.imthemedemo.activity.ChatActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+    </application>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+  	<uses-permission android:name="android.permission.CAMERA"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+  	<uses-permission android:name="android.permission.FLASHLIGHT"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/> 
+    <uses-permission android:name="android.permission.INTERNET" /> 
+</manifest>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ApkplugCloudServiceDemo</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+	 <string-array name="activity_titles">
+        <item>获取插件列表</item>
+        <item>更新已安装插件状态</item>
+       
+    </string-array>
+    <string-array name="activity_descs">
+        <item>
+            	从服务器上获取最新插件列表
+        </item>
+        <item>
+            	查询服务器上最新的插件状态
+        </item>
+        
+    </string-array>
+</resources>
