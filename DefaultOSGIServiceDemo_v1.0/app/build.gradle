@@ -6,8 +6,8 @@ android {
 
     defaultConfig {
         applicationId "com.apkplug.defaultosgiservicedemo"
-        minSdkVersion 8
-        targetSdkVersion 18
+        minSdkVersion 15
+        targetSdkVersion 22
     }
 
     buildTypes {
@@ -20,5 +20,6 @@ android {
 
 dependencies {
     compile 'com.android.support:support-v4:23.1.0'
-    compile files('libs/BundleCloud2.9.7-Release.jar')
+    //compile files('libs/BundleCloud2.9.7-Release.jar')
+    compile 'com.apkplug.sdk:libapkplugsdk:1.0.5'
 }

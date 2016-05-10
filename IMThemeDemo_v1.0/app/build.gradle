@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.apkplug.imthemedemo"
-        minSdkVersion 8
+        minSdkVersion 15
         targetSdkVersion 18
     }
 
@@ -20,5 +20,6 @@ android {
 
 dependencies {
     compile 'com.android.support:support-v4:23.1.0'
-    compile files('libs/BundleCloud2.9.7-Release.jar')
+    //compile files('libs/BundleCloud2.9.7-Release.jar')
+    compile 'com.apkplug.sdk:libapkplugsdk:1.0.5'
 }
