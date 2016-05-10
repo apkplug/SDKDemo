@@ -1,17 +1,13 @@
 package com.apkplug.bundle.manager;
+import android.app.Application;
+import android.util.Log;
+
 import org.apkplug.Bundle.InstallBundler;
 import org.apkplug.Bundle.installCallback;
 import org.apkplug.app.FrameworkFactory;
 import org.apkplug.app.FrameworkInstance;
-import org.apkplug.mxdstream.streamip.RegStreamIPAgent;
-import org.apkplug.mxdstream.streamip.rever.StreamIPReverTest;
 import org.osgi.framework.Bundle;
 import org.osgi.framework.BundleContext;
-import android.app.Application;
-import android.os.Handler;
-import android.os.Message;
-import android.util.Log;
-import android.widget.Toast;
 
 public class ProxyApplication extends Application {
 
@@ -20,6 +16,8 @@ public class ProxyApplication extends Application {
 	public FrameworkInstance getFrame() {
 		return frame;
 	}
+
+	static BundleContext bundleContext;
 
 	public void onCreate() {   
 		
@@ -32,10 +30,12 @@ public class ProxyApplication extends Application {
 				//org.apkplug.app 
 			 	//     接口 FrameworkInstance
 			 	Log.e("start", "fsfsdafasfsa");
-				frame=FrameworkFactory.getInstance().start(null, this);
+				FrameworkFactory frameworkFactory = FrameworkFactory.getInstance();
+				frame=frameworkFactory.start(null, this);
 				//frame=FrameworkFactory.getInstance().start(null,this);
 				System.out.println("ProxyApplication1");
 				BundleContext context =frame.getSystemBundleContext();
+				bundleContext = context;
 				// InstallBundler 是2.7.0版本内置与框架中的
 				InstallBundler ib=new InstallBundler(context);
 				ib.installForAssets("BundleDemoJni.apk", "1.0.0", null,

@@ -1,42 +1,37 @@
 package com.apkplug.bundle.manager;
 
-import java.io.File;
-import java.util.List;
-import org.apkplug.Bundle.BundleControl;
-import org.apkplug.Bundle.OSGIServiceAgent;
-import org.apkplug.Bundle.installCallback;
-import org.apkplug.app.FrameworkFactory;
-import org.apkplug.app.FrameworkInstance;
-import org.osgi.framework.BundleActivator;
-import org.osgi.framework.BundleContext;
-import org.osgi.framework.BundleEvent;
-import org.osgi.framework.ServiceReference;
-import org.osgi.framework.ServiceRegistration;
-import org.osgi.framework.SynchronousBundleListener;
-import com.apkplug.bundle.manager.R;
-import com.apkplug.bundle.manager.FileUtil.FilebrowerDialog;
-import com.apkplug.bundle.manager.FileUtil.filter.apkFilter;
-import com.apkplug.bundle.manager.FileUtil.filter.isFilesFilter;
-import com.apkplug.bundle.manager.adapter.ListBundleAdapter;
-import com.apkplug.bundle.manager.util.preferencesFactory.SharedPreferencesFactory;
-import android.os.Build;
-import android.os.Bundle;
-import android.os.Environment;
-import android.os.Handler;
-import android.os.Message;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
-import android.content.Intent;
-import android.util.Log;
+import android.os.Bundle;
+import android.os.Environment;
+import android.os.Handler;
 import android.view.KeyEvent;
-import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import com.apkplug.bundle.manager.FileUtil.FilebrowerDialog;
+import com.apkplug.bundle.manager.FileUtil.filter.apkFilter;
+import com.apkplug.bundle.manager.FileUtil.filter.isFilesFilter;
+import com.apkplug.bundle.manager.adapter.ListBundleAdapter;
+import com.apkplug.bundle.manager.util.preferencesFactory.SharedPreferencesFactory;
+import com.apkplug.trust.PlugManager;
+
+import org.apkplug.Bundle.BundleControl;
+import org.apkplug.Bundle.OSGIServiceAgent;
+import org.apkplug.Bundle.installCallback;
+import org.apkplug.app.FrameworkFactory;
+import org.apkplug.app.FrameworkInstance;
+import org.osgi.framework.BundleContext;
+import org.osgi.framework.BundleEvent;
+import org.osgi.framework.SynchronousBundleListener;
+
+import java.io.File;
+import java.util.List;
 /**
  * 0.0.1 版本新增安装本地插件接口
  * MainActivity.install(String path,installCallback callback)
@@ -66,12 +61,21 @@ public class MainActivity extends Activity {
 		
 		frame=((ProxyApplication)this.getApplication()).getFrame();
 		info =(TextView)this.findViewById(R.id.info);
+		String publickey = "JKU4xRNOydL6PT52l2Spv6CloGWW/x7tWwG9OmwgBN045D6Rbh49me4Xy5n9Ic5MTnfkuF9kqihhW5F/nXLsU3HUzozeAc3YhHsE56jQBuhsqMRnhuUa8EpESmqzu72YwPIA4tZxGOxXLn0kyTAxDVSTBJ1E0J1n6oQcCT8uUaY=";
+
+		try {
+			PlugManager.getInstance().init(this,ProxyApplication.bundleContext,publickey);
+			PlugManager.getInstance().requestPermission(this);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 
 		initInstallBundle();
 		this.getWindow().getDecorView().getRootView().getParent();
 		initBundleList();
 		//监听插件安装状态已动态更新列表
 		ListenerBundleEvent();
+
 	}
 	
 	/**
@@ -271,5 +275,11 @@ public class MainActivity extends Activity {
 		} else {
 			return super.dispatchKeyEvent(event);
 		}
-	} 
+	}
+
+	@Override
+	public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+		super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+		//PlugManager.getInstance().onRequestPermissionsResult(requestCode,this);
+	}
 }
