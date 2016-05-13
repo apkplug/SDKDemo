@@ -208,7 +208,7 @@ public class MainActivity extends AppCompatActivity {
                     Log.e("install", " bundle" + bundle.getName());
                 }
                 bundleList.add(bundle);
-                adapter.setBtnName(plugInfoList.indexOf(bundle.getName()),"运行");
+                adapter.setBtnName(plugInfoList.indexOf(plugInfo),"运行");
             }
 
             @Override
