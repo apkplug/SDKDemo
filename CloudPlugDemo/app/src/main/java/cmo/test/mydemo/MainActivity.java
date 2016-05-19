@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         initview();
 
         try {
-            PlugManager.getInstance().init(this, FrameworkFactory.getInstance().start(null, this).getSystemBundleContext(), Constants.PUBLICKEY);
+            PlugManager.getInstance().init(this, FrameworkFactory.getInstance().start(null, this).getSystemBundleContext(), Constants.PUBLICKEY,false);
 
             PlugManager.getInstance().requestPermission(this);
 

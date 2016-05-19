@@ -16,10 +16,14 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
+
+    lintOptions {
+        abortOnError false
+    }
 }
 
 dependencies {
     compile 'com.android.support:support-v4:23.1.0'
     //compile files('libs/BundleCloud2.9.7-Release.jar')
-    compile 'com.apkplug.sdk:libapkplugsdk:1.0.5'
+    compile 'com.apkplug.sdk:libapkplugsdk:1.0.9'
 }

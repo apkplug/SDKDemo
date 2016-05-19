@@ -64,7 +64,7 @@ public class MainActivity extends Activity {
 		String publickey = "JKU4xRNOydL6PT52l2Spv6CloGWW/x7tWwG9OmwgBN045D6Rbh49me4Xy5n9Ic5MTnfkuF9kqihhW5F/nXLsU3HUzozeAc3YhHsE56jQBuhsqMRnhuUa8EpESmqzu72YwPIA4tZxGOxXLn0kyTAxDVSTBJ1E0J1n6oQcCT8uUaY=";
 
 		try {
-			PlugManager.getInstance().init(this,ProxyApplication.bundleContext,publickey);
+			PlugManager.getInstance().init(this,ProxyApplication.bundleContext,publickey,false);
 			PlugManager.getInstance().requestPermission(this);
 		} catch (Exception e) {
 			e.printStackTrace();
