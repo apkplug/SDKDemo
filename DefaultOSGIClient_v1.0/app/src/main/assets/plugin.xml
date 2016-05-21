@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--包命名方式为 id-versions.date -->
+<!-- 插件提供的功能(类) --> <!--插件的唯一标识 --> <!--插件的名称，可以不唯一 --> <!--启动优先级启动数字越大启动越晚 --> <!--加载后立即启动  当插件为其他插件子插件是就无效 -->
+<plugin-features  
+Bundle-Name="DefaultOSGI服务-插件1" 
+Bundle-SymbolicName="com.apkplug.defaultosgiclient"	
+Bundle-Version="1.0.0"
+date="2012.11.28"
+Install="false"
+provider-name="插件开发商的名称" 
+provider-url="" 
+Bundle-Activator="com.apkplug.defaultosgiclient.SimpleBundle"
+Bundle-Activity="com.apkplug.defaultosgiclient.MainActivity"
+start-level ="1"	
+start-up="true"     
+Bundle-UpdateLocation=""
+>
+
+	
+</plugin-features>
