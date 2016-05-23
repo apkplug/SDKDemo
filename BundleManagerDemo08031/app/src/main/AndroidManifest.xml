@@ -33,8 +33,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <meta-data  android:name="apkplug-auth" android:value="JKU4xRNOydL6PT52l2Spv6CloGWW/x7tWwG9OmwgBN045D6Rbh49me4Xy5n9Ic5MTnfkuF9kqihhW5F/nXLsU3HUzozeAc3YhHsE56jQBuhsqMRnhuUa8EpESmqzu72YwPIA4tZxGOxXLn0kyTAxDVSTBJ1E0J1n6oQcCT8uUaY=" ></meta-data>
-        <meta-data  android:name="apkplug-appid" android:value="20351c169d773fd8" ></meta-data>
+       
         <!-- <activity
             android:name="com.apkplug.bundle.manager.SplshActivity"  
             android:configChanges="orientation|keyboardHidden"
@@ -45,9 +44,7 @@
         <meta-data
             android:name="apkplug_containerid"
             android:value="container1" />
-        <meta-data
-            android:name="publickey"
-            android:value="MIGdMA0GCSqGSIb3DQEBAQUAA4GLADCBhwKBgQDznY/txkI/prtOi3pofTkhu6bd PKucyRzvQnkqsv/FNGhos0+QwPCy17PT8ftP60PUyLXzTiF5PW901sEJYHx8KVc/ b+j41rvXdgVGJ/i8t26vxZR7FxKnuxc9TjJ3IFSvhiZY6NaOGf9l/qv6xbD+s6SE MZqBR40q2lpUe0VorwIBAw==" />
+        
         <activity android:name="org.apkplug.app.apkplugActivity"
             android:theme="@android:style/Theme.Translucent.NoTitleBar"
             android:configChanges="orientation|keyboardHidden">

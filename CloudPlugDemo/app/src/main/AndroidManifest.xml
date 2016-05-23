@@ -19,9 +19,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <meta-data android:name="apkplug-auth" android:value="G78Ln8POzrupMyNNMogQW/n8P0YWCC2U1Kr2/gUlSuftRxHK+fpQB/Ve/ieSomou3eqIpPNdEkMrdZk2IjYRpkoacisguldoXqA+J+0dzQEHijbyUIq4lmvsg9ujZSN2KZXHqPoTvX8AulKb1tBMHw3DQsFvDYh+LTi7IW+Rx80=" ></meta-data>
-        <meta-data android:name="apkplug-appid" android:value="8aa695bad0dc2420"></meta-data>
-
         <meta-data
             android:name="apkplug_appid"
             android:value="app_1Tk78DntalG" />
