@@ -27,6 +27,6 @@ dependencies {
     compile 'com.android.support:cardview-v7:23.2.1'
     compile 'com.jakewharton:butterknife:7.0.1'
 
-    compile 'com.apkplug.sdk:libapkplugsdk:1.0.10'
+    compile 'com.apkplug.sdk:libapkplugsdk:1.0.12'
 
 }

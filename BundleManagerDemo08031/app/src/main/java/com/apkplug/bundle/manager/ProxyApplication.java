@@ -53,6 +53,7 @@ public class ProxyApplication extends Application {
 						});
 				ib.installForAssets("BundleDemoShow.apk", "1.0.0", null,null);
 				ib.installForAssets("BundleDemoStartActivity1.apk", "1.0.0", null,null);
+				ib.installForAssets("MyBundle.apk", "1.0.0", null,null);
 	        }
 	        catch (Exception ex)
 	        {

@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.apkplug.defaultosgiclient"
-        minSdkVersion 8
+        minSdkVersion 15
         targetSdkVersion 18
     }
 
@@ -20,5 +20,5 @@ android {
 
 dependencies {
     compile 'com.android.support:support-v4:23.1.0'
-    compile 'com.apkplug.sdk:libapkplugsdk:1.0.10'
+    compile 'com.apkplug.sdk:libapkplugsdk:1.0.12'
 }
