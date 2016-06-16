@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">插件管理</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+  <string-array name="activity_titles">
+        <item>启动Activity</item>
+        <item>调用.so</item>
+        <item>插件间通讯</item>
+        <item>主题演示</item>
+        <item>查看安装的插件</item>
+        <item>插件托管服务测试</item>
+        <item>插件更新演示</item>
+        <item>activityresult测试</item>
+    </string-array>
+    <string-array name="activity_descs">
+        <item>
+            通过SystemBundle获取系统提供的Acitiviy服务来启动插件中的Activity.
+        </item>
+        <item>
+            插件调用.so文件.
+        </item>
+        <item>
+            利用OSIG服务实现插件间自定义通讯.
+        </item>
+        <item>
+            通过系统提供的服务来切换插件主题.
+        </item>
+        <item>
+            查看已安装的插件，如果插件设置了Bundle-Activity点击对应Item便可以启动Activity.
+        </item>
+        <item>
+            由apkplug提供的插件远程托管服务，开发者可以通过集成BundleService.apk 插件提供的
+            服务类实现远程插件下载更新管理等，具体操作可以参看BundleServiceDoc 文档
+        </item>
+        <item>
+            通过插件托管服务远程更新
+        </item>
+         <item>
+            activityresult测试 与外表功能调用（图片剪切）
+        </item>
+    </string-array>
+</resources>

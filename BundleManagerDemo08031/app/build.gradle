@@ -26,5 +26,5 @@ dependencies {
     compile 'com.android.support:support-v4:23.2.1'
     compile 'com.android.support:appcompat-v7:23.2.1'
     //compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.apkplug.sdk:libapkplugsdk:1.0.12'
+    compile 'com.apkplug.sdk:libapkplugsdk:1.0.14'
 }
