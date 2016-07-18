@@ -89,10 +89,15 @@ public class ListBundleAdapter extends LListAdapter<Bundle>{
 								if(ab.getBundleActivity()!=null){
 									Toast.makeText(mContext, "启动"+ab.getBundleActivity().split(",")[0],
 										     Toast.LENGTH_SHORT).show();
-									Intent i=new Intent();
-					    			i.setClassName(mContext, ab.getBundleActivity().split(",")[0]);
-									i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-									mContext.startActivity(i);
+									try {
+										Intent i=new Intent();
+										i.setClassName(mContext, ab.getBundleActivity().split(",")[0]);
+										i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+										mContext.startActivity(i);
+									}catch (Exception e){
+										e.printStackTrace();
+									}
+
 								}else{
 									
 									Toast.makeText(mContext, "该插件没有配置BundleActivity",

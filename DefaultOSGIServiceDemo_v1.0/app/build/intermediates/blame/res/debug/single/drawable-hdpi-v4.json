@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "E:\\GitWork\\SDKDemo\\DefaultOSGIServiceDemo_v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tab_divider.png",
+        "source": "E:\\GitWork\\SDKDemo\\DefaultOSGIServiceDemo_v1.0\\app\\src\\main\\res\\drawable-hdpi\\tab_divider.png"
+    },
+    {
+        "merged": "E:\\GitWork\\SDKDemo\\DefaultOSGIServiceDemo_v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_launcher.png",
+        "source": "E:\\GitWork\\SDKDemo\\DefaultOSGIServiceDemo_v1.0\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\GitWork\\SDKDemo\\DefaultOSGIServiceDemo_v1.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\icon_360.png",
+        "source": "E:\\GitWork\\SDKDemo\\DefaultOSGIServiceDemo_v1.0\\app\\src\\main\\res\\drawable-hdpi\\icon_360.png"
+    }
+]

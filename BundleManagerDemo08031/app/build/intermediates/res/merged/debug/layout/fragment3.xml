@@ -1,0 +1,14 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#0000FF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:text="我是第3个页面"
+        />
+    
+</LinearLayout>

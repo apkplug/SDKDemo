@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "E:\\GitWork\\SDKDemo\\DefaultOSGIClient_v1.0\\app\\build\\intermediates\\res\\merged\\debug\\layout\\testactivity.xml",
+        "source": "E:\\GitWork\\SDKDemo\\DefaultOSGIClient_v1.0\\app\\src\\main\\res\\layout\\testactivity.xml"
+    },
+    {
+        "merged": "E:\\GitWork\\SDKDemo\\DefaultOSGIClient_v1.0\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "E:\\GitWork\\SDKDemo\\DefaultOSGIClient_v1.0\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "E:\\GitWork\\SDKDemo\\DefaultOSGIClient_v1.0\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mybtn.xml",
+        "source": "E:\\GitWork\\SDKDemo\\DefaultOSGIClient_v1.0\\app\\src\\main\\res\\layout\\mybtn.xml"
+    }
+]

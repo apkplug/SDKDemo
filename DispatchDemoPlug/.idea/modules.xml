@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DispatchDemoPlug.iml" filepath="$PROJECT_DIR$/DispatchDemoPlug.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/dispatchplug.iml" filepath="$PROJECT_DIR$/app/dispatchplug.iml" />
+    </modules>
+  </component>
+</project>
