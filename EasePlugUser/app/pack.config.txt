@@ -1,0 +1,25 @@
+{
+    "apk_dir":"",
+    "access_id":"",
+    "access_secret":"",
+    "global_app_id":"",
+    "global_publickey":"",
+    "global_sdk_version":200,
+    "global_policy":"hotupload",
+    "global_set_current":"true"
+    "global_info":"info for your app",
+    "tasks":[
+      {
+        "filename":".+?apk",
+        "channel_id":"-(\\w+)-",
+        "action":"pack-upload"
+      }
+    ],
+    "signing":{
+      "keyAlias": "",
+      "keyPassword":"",
+      "storeFile":"",
+      "storePassword":""
+    }
+
+}
