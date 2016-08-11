@@ -277,7 +277,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        PlugManager.getInstance().onRequestPermissionsResult(requestCode, this);
+        PlugManager.getInstance().onRequestPermissionsResult(requestCode,this,permissions,grantResults);
     }
 
     @Override

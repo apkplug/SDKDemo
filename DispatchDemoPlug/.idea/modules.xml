@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DispatchDemoPlug.iml" filepath="$PROJECT_DIR$/DispatchDemoPlug.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/dispatchplug.iml" filepath="$PROJECT_DIR$/app/dispatchplug.iml" />
     </modules>
   </component>

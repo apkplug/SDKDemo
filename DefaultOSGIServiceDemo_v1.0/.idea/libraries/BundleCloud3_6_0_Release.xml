@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="BundleCloud3.6.0-Release">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/app/libs/BundleCloud3.6.0-Release.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

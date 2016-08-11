@@ -24,6 +24,6 @@ android {
 
 dependencies {
     compile 'com.android.support:support-v4:23.1.0'
-    compile files('libs/BundleCloud3.6.0-Release.jar')
+    compile files('libs/BundleCloud3.7.4-Release_win.jar')
     //compile 'com.apkplug.sdk:libapkplugsdk:1.0.14'
 }
