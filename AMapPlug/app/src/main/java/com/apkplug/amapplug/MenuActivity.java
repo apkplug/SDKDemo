@@ -1,6 +1,7 @@
 package com.apkplug.amapplug;
 
 import android.Manifest;
+import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
@@ -67,6 +68,11 @@ public class MenuActivity extends AppCompatActivity {
             }
         });
 
+
+        Intent intent = new Intent();
+        intent.setClassName(MenuActivity.this, "com.apkplug.amappluguserxxxxxxxxxxxxx.MainActivity");
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
     }
 
     @Override

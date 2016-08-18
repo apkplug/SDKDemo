@@ -1,5 +1,6 @@
 package com.apkplug.amapplug;
 
+import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.AppCompatActivity;
@@ -21,6 +22,10 @@ public class MainActivity extends FragmentActivity {
         //在activity执行onCreate时执行mMapView.onCreate(savedInstanceState)，实现地图生命周期管理
         mMapView.onCreate(savedInstanceState);
 
+        Intent intent = new Intent();
+        intent.setClassName(MainActivity.this, "com.apkplug.amappluguser.MainActivity");
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
     }
 
     @Override
