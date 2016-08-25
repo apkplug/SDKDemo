@@ -11,6 +11,7 @@
     Bundle-Activator="com.apkplug.easemobplug.MainActivitor"
     start-level ="1"
     start-up="true"
+    Use-Host-MetaData="true"
 >
     <processor
         uri="http://apkplug.plug.com/meseplug/login"
