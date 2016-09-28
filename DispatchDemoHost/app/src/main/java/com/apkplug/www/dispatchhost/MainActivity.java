@@ -30,13 +30,13 @@ public class MainActivity extends AppCompatActivity {
         BundleContext context =frame.getSystemBundleContext();
 
         final DispatchAgent dispatchAgent=new DispatchAgent(context);
-        dispatchAgent.register(context,"http://yyfr.net/host/accesstoken",TokenProcessor.class.getName());//注册一个dispatch服务,等插件来调用
+        dispatchAgent.register(context,"apkplug://host/accesstoken",TokenProcessor.class.getName());//注册一个dispatch服务,等插件来调用
 
         //调用插件的dispatch服务
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                dispatchAgent.call("http://yyfr.net/plug01/login",null,new WorkerCallback(){
+                dispatchAgent.call("apkplug://plug01/login",null,new WorkerCallback(){
 
                     @Override
                     public void reply(URI uri,Object ...replyObj) throws Exception {

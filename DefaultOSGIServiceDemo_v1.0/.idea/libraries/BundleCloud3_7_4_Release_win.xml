@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="BundleCloud3.7.4-Release_win">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/app/libs/BundleCloud3.7.4-Release_win.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

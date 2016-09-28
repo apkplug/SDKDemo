@@ -1,6 +1,5 @@
 package com.apkplug.www.dispatchhost;
 
-import org.apkplug.Bundle.dispatch.DispatchAgent;
 import org.apkplug.Bundle.dispatch.Processor;
 import org.osgi.framework.BundleContext;
 

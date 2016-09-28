@@ -26,6 +26,9 @@ import com.apkplug.trust.data.PlugInfo;
 import com.apkplug.trust.net.listeners.OnGetPlugInfoListener;
 import com.apkplug.trust.net.requests.GetPlugInfoRequest;
 
+import org.apkplug.Bundle.InstallBundler;
+import org.apkplug.Bundle.InstallInfo;
+import org.apkplug.Bundle.installCallback;
 import org.apkplug.app.FrameworkFactory;
 import org.osgi.framework.BundleContext;
 

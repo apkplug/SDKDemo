@@ -15,11 +15,11 @@
 	Bundle-UpdateLocation=""
 	>
 	<processor
-		uri="http://yyfr.net/plug01/login"
+		uri="apkplug://plug01/login"
 		className="com.apkplug.www.dispatchplug.LoginProcessor"
 	/>
 	<processor
-		uri="http://yyfr.net/plug01/getuserinfo"
+		uri="apkplug://plug01/getuserinfo"
 		className="com.apkplug.www.dispatchplug.UserInfoProcessor"
 	/>
 </plugin-features>

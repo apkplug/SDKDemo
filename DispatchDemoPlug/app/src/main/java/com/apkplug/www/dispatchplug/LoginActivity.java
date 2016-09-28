@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import org.apkplug.Bundle.dispatch.DispatchAgent;
 import org.apkplug.Bundle.dispatch.WorkerCallback;
@@ -29,7 +28,7 @@ public class LoginActivity extends AppCompatActivity {
                 dialog = ProgressDialog.show(LoginActivity.this, "登陆中...", "正在获取宿主中的token... 请稍后！");
                 final BundleContext context =SimpleBundle.mcontext;
                 final DispatchAgent dispatchAgent=new DispatchAgent(context);
-                dispatchAgent.call("http://yyfr.net/host/accesstoken",null,new WorkerCallback(){
+                dispatchAgent.call("apkplug://host/accesstoken",null,new WorkerCallback(){
 
                     @Override
                     public void reply(URI uri, Object ...replyObj) throws Exception {

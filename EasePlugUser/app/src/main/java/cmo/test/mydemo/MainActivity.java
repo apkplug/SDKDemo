@@ -161,7 +161,7 @@ public class MainActivity extends AppCompatActivity {
                 textView.setText(textView.getText()+"\n开始登陆环信");
             }
         });
-        dispatchAgent.call("http://apkplug.plug.com/meseplug/login", params2, new WorkerCallback() {
+        dispatchAgent.call("apkplug://meseplug/login", params2, new WorkerCallback() {
             @Override
             public void reply(URI uri, Object... objects) throws Exception {
 
@@ -195,7 +195,7 @@ public class MainActivity extends AppCompatActivity {
                         HashMap<String,Object> params = new HashMap<String, Object>();
                         params.put("UserName","apkplug4");
                         textView.setText(textView.getText()+"\n添加好友");
-                        dispatchAgent.call("http://apkplug.plug.com/meseplug/addfriend", params, new WorkerCallback() {
+                        dispatchAgent.call("apkplug://meseplug/addfriend", params, new WorkerCallback() {
                             @Override
                             public void reply(URI uri, Object... objects) throws Exception {
                                 if((Boolean) objects[0]){

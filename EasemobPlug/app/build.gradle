@@ -1,9 +1,7 @@
 apply plugin: 'com.android.application'
-
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.3"
-
     defaultConfig {
         applicationId "com.apkplug.easemobplug"
         minSdkVersion 15
@@ -18,7 +16,6 @@ android {
         }
     }
 }
-
 dependencies {
 //    compile fileTree(dir: 'libs', include: ['android-support-multidex.jar'])
     testCompile 'junit:junit:4.12'
@@ -26,5 +23,5 @@ dependencies {
     compile 'com.android.support:design:23.4.0'
     compile project(':easeUI_CN')
     compile 'com.jakewharton:butterknife:7.0.1'
-    provided files('libs/osgi3.7.0.jar')
+    provided files('libs/osgi3.9.0.jar')
 }

@@ -82,7 +82,7 @@
     <orderEntry type="jdk" jdkName="Android API 23 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="support-annotations-23.1.0" level="project" />
-    <orderEntry type="library" exported="" name="BundleCloud3.7.4-Release_win" level="project" />
+    <orderEntry type="library" exported="" name="BundleCloud3.8.2-Release_win" level="project" />
     <orderEntry type="library" exported="" name="support-v4-23.1.0" level="project" />
   </component>
 </module>

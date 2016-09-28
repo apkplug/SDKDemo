@@ -8,6 +8,7 @@
         date="2016.07.20"
         provider-name="APKPLUG"
         Bundle-Activity="com.apkplug.baidumapplug.MainActivity"
+        Bundle-Activator="com.apkplug.baidumapplug.MainActivitor"
         start-level ="1"
         start-up="true"
     >

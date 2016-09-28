@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AMapPlugUser.iml" filepath="$PROJECT_DIR$/AMapPlugUser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/amapplug/amapplug.iml" filepath="$PROJECT_DIR$/amapplug/amapplug.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

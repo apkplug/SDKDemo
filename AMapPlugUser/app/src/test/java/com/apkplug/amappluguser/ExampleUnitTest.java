@@ -1,4 +1,4 @@
-package com.apkplug.amappluguserxxxxxxxxxxxxx;
+package com.apkplug.amappluguser;
 
 import org.junit.Test;
 

@@ -14,33 +14,38 @@
     Use-Host-MetaData="true"
 >
     <processor
-        uri="http://apkplug.plug.com/meseplug/login"
+        uri="apkplug://meseplug/login"
         className="com.apkplug.easemobplug.Processores.EaseLogin"
     />
 
     <processor
-        uri="http://apkplug.plug.com/meseplug/init"
+        uri="apkplug://apkplug.plug.com/meseplug/init"
         className="com.apkplug.easemobplug.Processores.EaseInit"
     />
 
     <processor
-        uri="http://apkplug.plug.com/meseplug/regist"
+        uri="apkplug://apkplug.plug.com/meseplug/regist"
         className="com.apkplug.easemobplug.Processores.EaseCreateAccount"
     />
 
     <processor
-        uri="http://apkplug.plug.com/meseplug/contect"
+        uri="apkplug://meseplug/contect"
         className="com.apkplug.easemobplug.Processores.EaseContectsProcessor"
     />
 
     <processor
-        uri="http://apkplug.plug.com/meseplug/addfriend"
+        uri="http://meseplug/addfriend"
         className="com.apkplug.easemobplug.Processores.EaseAddFriend"
     />
 
     <processor
-        uri="http://apkplug.plug.com/meseplug/deletefriend"
+        uri="apkplug://meseplug/deletefriend"
         className="com.apkplug.easemobplug.Processores.EaseDeleteFriend"
+    />
+
+    <processor
+        uri="apkplug://meseplug/loginactivity"
+        className="com.apkplug.easemobplug.Processores.LoginProcessor"
     />
 
 
