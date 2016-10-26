@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.apkplug.baseplugmodle">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BIND_MIDI_DEVICE_SERVICE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:name=".MainApplication"
+        android:theme="@style/AppTheme">
+
+        <!--change -->
+        <meta-data
+            android:name="apkplug_appid"
+            android:value="app_1Tk78DntalG" />
+        <meta-data
+            android:name="apkplug_containerid"
+            android:value="container1" />
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="org.apkplug.app.apkplugActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="orientation|keyboardHidden">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"></action>
+            </intent-filter>
+
+        </activity>
+
+        <service android:name="com.apkplug.libmerge.common.MergeServeice" android:process=":merge" />
+        <service android:name="org.apkplug.app.apkplugService"/>
+        <!--change -->
+        <provider android:name="org.apkplug.app.apkplugProvider" android:authorities="xxxx.apkplugprovider"/>
+
+
+    </application>
+
+</manifest>
